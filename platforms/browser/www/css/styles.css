@@ -1,0 +1,229 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+
+
+.statusbar-overlay {
+    background: #000000;
+}
+
+.demo-card-header-pic .card-header {
+    height: 20vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+  }
+  .demo-card-header-pic .card-content-padding .date{
+    color: #8e8e93;
+  }
+
+  .align-items-flex-end{
+      align-items: flex-end;
+  }
+
+  .card-content-padding{
+      padding: 10px;
+  }
+
+/* iconos de la barra de abajo */
+  .icon {
+      color: #ffcc00 
+  }
+
+/* iconos de la lista de los bares */
+  .ycon {
+      color: rgb(161, 42, 46)
+  }
+
+
+  .navbar {
+    font-family:'Permanent Marker', cursive;
+    color:#726a4c;
+    background-color: #ffcc00
+  }
+
+
+.ocultar {
+    display: none
+}
+
+
+
+/* BARRA SUPERIOR - LOGUITO */
+    .sliding {
+            font-family:'Permanent Marker', cursive;
+            font-size:xx-large;
+    } 
+
+
+    .badge {
+        font-family: 'Open Sans', sans-serif;
+        font-size: medium;
+    }
+
+/* Texto descripcion lista */
+    .interior-texto {
+        font-family: 'Open Sans', sans-serif;
+        font-size: medium;
+        font-weight: bold;
+        color: rgb(27, 47, 123)
+    }
+
+/* FONDO DE COLOR */
+    .page-content {
+        /* background-color:#fae076 */
+        background-color:#e5d693
+    }
+
+
+.formulario_texto, .item-input-wrap {
+    color: rgb( 27, 47, 123);
+    font-family:'Open Sans', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    text-align: match-parent;
+    padding: 0.2em;
+}
+
+.insta {
+    color: rgb( 27, 47, 123);
+}
+
+
+
+/* TOOLBAR - BARRA DE ABAJO */
+.toolbar {
+    background-color: #726a4c
+}
+
+/* INDEX - INDEX.HTML
+LOGO */
+.logo {
+    color:#ffcc00;
+    font-family:'Permanent Marker', cursive;
+    font-size:80px;
+    text-align: center;
+    line-height : 68px;
+}
+
+/* BOTON PARA INGRESAR AL MENU PRINCIPAL */
+.IB {
+    font-family:'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+
+/* AVISO DE REGISTRO */
+.aviso_registro {
+   color: rgb( 27, 47, 123);
+   font-family:'Permanent Marker', cursive;
+   font-size: 1.5em;
+   text-align: center;
+   border: none;
+}
+
+
+/* CONTENIDO PRINCIPAL - CONTENIDO.HTML*/ 
+
+/* Texto introductorio */
+.tpg1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4em;
+    color: rgb(27, 47, 123);
+    display: inline-block;
+    width: fit-content;
+}
+
+/* Texto introductorio - PARTE EN ITÁLICA*/
+.italic {
+    font-style: italic;
+    display: inline-block;
+    width: fit-content;
+}
+
+p {
+    margin: 0em;
+}
+
+/* BARESXBARRIO - TEXTO INFO */
+.baresxbarrios{
+    font-family:'Permanent Marker', cursive;
+        font-size: 1.5em;
+        color: rgb(161 ,42, 46)
+    }
+
+/* BOTONES DE LOS BARRIOS */
+.boton_barrio {
+    color: rgb( 27, 47, 123);
+    font-family:'Permanent Marker', cursive;
+    /* font-size:large; */
+    font-size:1.5em;
+} 
+
+  /* BOTONES DE LOS BARES */
+  .boton_bar {
+    font-family:'Open Sans', sans-serif;
+    font-size: 1.3em;
+    font-weight: bolder;
+    padding: 0;
+    border: none;
+    background: none;
+    color: rgb(161 ,42, 46)
+    }  
+
+.ocultar_recoleta, .ocultar_palermo, .ocultar_belgrano, .ocultar_microcentro {
+    display: none;
+}
+
+/* ITEMS DE LA LISTA  */
+.item-inner, .item-after, .item-title, .item-media {
+    display: inline-block;
+    width: fit-content;
+}
+    /* GOOGLE MAPS - RESPONSIVE */
+    /* .google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+        }
+        .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+        }
+     */
+  
+ul {
+    list-style-type:none !important;
+}
+
+
+/* BOTON DE ENVIAR - FORMULARIO DE REGISTRO */
+.enviar-boton {
+    position: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5em;
+    margin: 5em;
+}
+
+
+/* .page-content {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center
+} */

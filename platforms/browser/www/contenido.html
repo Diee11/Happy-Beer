@@ -1,0 +1,597 @@
+<!-- Status bar overlay for full screen mode (PhoneGap) -->
+<div class="statusbar-overlay"></div>
+
+<!-- Panels overlay-->
+<div class="panel-overlay"></div>
+<!-- Left panel with reveal effect-->
+<div class="panel panel-left panel-reveal">
+    <div class="content block">
+        <p><a href="Usuario.html">Ingresar</a></p>
+    </div>
+</div>
+
+<!-- Views -->
+<div class="views">
+    <!-- Your main view, should have "view-main" class -->
+    <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+            <div class="navbar-inner">
+                <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                <div class="center sliding">Happy Beer</div>
+                <div class="right">
+                    <!--
+                      Right link contains only icon - additional "icon-only" class
+                      Additional "open-panel" class tells app to open panel when we click on this link
+                    -->
+                    <a href="index.html" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+            <!-- Page, "data-page" contains page name -->
+            <div data-page="index" class="page">
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                    <div class="content-block">
+                        
+                        <h2 class="tpg1">Elegí de la lista de bares asociados el que esté mas cerca tuyo y te guste mas! <p class="italic">(y tenga happyhour, obvio).</p></h2>
+
+<h3 class="list baresxbarrios">BARES x BARRIOS</h3>
+
+<!-- <li class="Barrio">PALERMO</li> -->
+<button class="button col button-fill color-yellow text-color-pink boton_barrio" onclick="show_hide_palermo()">PALERMO</button>
+<div class="ocultar_palermo" id="palermo">
+
+<!-- <p>La Birreria</p> -->
+<button class="button col boton_bar" onclick="show_hide()"> La Birreria</button>
+<div class="ocultar" id="LaBirreria">
+
+<ul>
+<li>
+    <div class="item-content"></div>
+    <div class="item-media"><i class="fas fa-map-marker-alt ycon"></i>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13141.284827728836!2d-58.4332186!3d-34.5707382!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf75bdbc5d55df9da!2sLa%20Birreria%20-%20Ca%C3%B1itas!5e0!3m2!1ses!2sar!4v1575131008746!5m2!1ses!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</li>
+<li>
+        <div class="item-content">
+          <div class="item-media"><i class="fas fa-hourglass-start ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto">Happy Hour</div>
+            <div class="item-after"> <span class="badge">20 hs a 21 hs</span></div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="fas fa-mobile-alt ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto">011 4438-5248</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="fab fa-instagram ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto"><a href="https://www.instagram.com/labirreriaok/">/labirreriaok</a></div>
+          </div>
+        </div>
+      </li>
+</ul>
+</div>
+
+
+<!-- <p>El Galpón de Tacuara</p> -->
+<button class="button col boton_bar" onclick="show_hide_tacuara()">El Galpón de Tacuara</button>
+<div class="ocultar" id="Tacuara">
+
+<ul>
+<li>
+    <div class="item-content"></div>
+    <div class="item-media"><i class="fas fa-map-marker-alt ycon"></i>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13138.107823777018!2d-58.4275238!3d-34.5908342!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f9ff043a543b493!2sEl%20Galp%C3%B3n%20de%20Tacuara%20Palermo!5e0!3m2!1ses!2sar!4v1576006223974!5m2!1ses!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</li>
+<li>
+        <div class="item-content">
+          <div class="item-media"><i class="fas fa-hourglass-start ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto">Happy Hour</div>
+            <div class="item-after"> <span class="badge">20 hs a 21 hs</span></div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="fas fa-mobile-alt ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto">011 4438-5248</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="fab fa-instagram ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto"><a href="https://www.instagram.com/elgalpondetacuara_palermo/">/elgalpondetacuara_palermo
+            </a></div>
+          </div>
+        </div>
+      </li>
+</ul>
+</div>
+
+
+<!-- <p>FEA</p> -->
+<button class="button col boton_bar" onclick="show_hide_FEA()">FEA</button>
+<div class="ocultar" id="FEA">
+
+<ul>
+<li>
+    <div class="item-content"></div>
+    <div class="item-media"><i class="fas fa-map-marker-alt ycon"></i>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10351.865872365925!2d-58.4513822181519!3d-34.59755805255222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xba18f77399f41981!2sFEA%20-%20Birrer%C3%ADa!5e0!3m2!1ses!2sar!4v1576125967009!5m2!1ses!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</li>
+<li>
+        <div class="item-content">
+          <div class="item-media"><i class="fas fa-hourglass-start ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto">Happy Hour</div>
+            <div class="item-after"> <span class="badge">18 hs a 20 hs</span></div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="fas fa-mobile-alt ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto">011 4438-5248</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="fab fa-instagram ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto"><a href="https://www.instagram.com/somosfea/">/somosfea
+            </a></div>
+          </div>
+        </div>
+      </li>
+</ul>
+</div>
+
+<!-- <p>Dársena</p> -->
+<button class="button col boton_bar" onclick="show_hide_Dársena()">Dársena</button>
+<div class="ocultar" id="Dársena">
+
+<ul>
+<li>
+    <div class="item-content"></div>
+    <div class="item-media"><i class="fas fa-map-marker-alt ycon"></i>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5327.757266023358!2d-58.43599432279005!3d-34.59509358883314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x75aba81f46c17533!2sD%C3%A1rsena%20Bar!5e0!3m2!1ses!2sar!4v1576126434451!5m2!1ses!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</li>
+<li>
+        <div class="item-content">
+          <div class="item-media"><i class="fas fa-hourglass-start ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto">Happy Hour</div>
+            <div class="item-after"> <span class="badge">18 hs a 20 hs</span></div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="fas fa-mobile-alt ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto">011 4775-7856</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="fab fa-instagram ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto"><a href="https://www.instagram.com/darsenabar/">/darsenabar
+            </a></div>
+          </div>
+        </div>
+      </li>
+</ul>
+</div>
+
+
+</div>
+
+
+
+<!-- <li class="Barrio">RECOLETA</li> -->
+<button class="button col button-fill color-yellow text-color-pink boton_barrio" onclick="show_hide_recoleta()">RECOLETA</button>
+<div class="ocultar_recoleta" id="recoleta">
+
+<!-- <p>Buller</p> -->
+<button class="button col boton_bar" onclick="show_hide_buller()">Buller</button>
+<div class="ocultar" id="buller">
+
+<ul>
+<li>
+    <div class="item-content"></div>
+    <div class="item-media"><i class="fas fa-map-marker-alt ycon"></i>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13138.443702027864!2d-58.3922626!3d-34.5887101!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3ab3fcea96ecadf0!2sBuller!5e0!3m2!1ses!2sar!4v1576015102183!5m2!1ses!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+</li>
+<li>
+        <div class="item-content">
+          <div class="item-media"><i class="fas fa-hourglass-start ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto">Happy Hour</div>
+            <div class="item-after"> <span class="badge">20 hs a 22 hs</span></div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="fas fa-mobile-alt ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto">011 4806-0556</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="fab fa-instagram ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto"><a href="https://www.instagram.com/bullerbrewingco/">/bullerbrewingco
+            </a></div>
+          </div>
+        </div>
+      </li>
+</ul>
+</div>
+
+<!-- <p>Maldini</p> -->
+<button class="button col boton_bar" onclick="show_hide_maldini()">Maldini</button>
+<div class="ocultar" id="maldini">
+
+<ul>
+<li>
+    <div class="item-content"></div>
+    <div class="item-media"><i class="fas fa-map-marker-alt ycon"></i>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.708216376428!2d-58.39498768477087!3d-34.58624888046404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa2236df3f3%3A0x7fb15eaf1fd27128!2sAv.%20Pueyrred%C3%B3n%202501%2C%20C1119ACI%20CABA!5e0!3m2!1ses!2sar!4v1576016104263!5m2!1ses!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</li>
+<li>
+        <div class="item-content">
+          <div class="item-media"><i class="fas fa-hourglass-start ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto">Happy Hour</div>
+            <div class="item-after"> <span class="badge">20 hs a 22 hs</span></div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="fas fa-mobile-alt ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto">011 15-7366-6280</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="fab fa-instagram ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto"><a href="https://www.instagram.com/maldini.ba/">/maldini.ba
+            </a></div>
+          </div>
+        </div>
+      </li>
+</ul>
+</div>
+
+<!-- <p>Jobs</p> -->
+<button class="button col boton_bar" onclick="show_hide_Jobs()">Jobs</button>
+<div class="ocultar" id="Jobs">
+
+<ul>
+<li>
+    <div class="item-content"></div>
+    <div class="item-media"><i class="fas fa-map-marker-alt ycon"></i>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17791.443858395396!2d-58.411719471989855!3d-34.59509393237925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x45a750ddf381c58f!2sJobs%20Bar!5e0!3m2!1ses!2sar!4v1576127629385!5m2!1ses!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</li>
+<li>
+        <div class="item-content">
+          <div class="item-media"><i class="fas fa-hourglass-start ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto">Happy Hour</div>
+            <div class="item-after"> <span class="badge">19 hs a 20 hs</span></div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="fas fa-mobile-alt ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto">011 15-6529-1766</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="fab fa-instagram ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto"><a href="https://www.instagram.com/jobsbar_oficial/">/jobsbar_oficial
+            </a></div>
+          </div>
+        </div>
+      </li>
+</ul>
+</div>
+
+
+<!-- <p>Refugio Patagonia</p> -->
+<button class="button col boton_bar" onclick="show_hide_patagonia()">Refugio Patagonia</button>
+<div class="ocultar" id="patagonia">
+
+<ul>
+<li>
+    <div class="item-content"></div>
+    <div class="item-media"><i class="fas fa-map-marker-alt ycon"></i>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18314.052860814863!2d-58.40696054791008!3d-34.58928533122819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x58ede862b9731438!2sRefugio%20Patagonia!5e0!3m2!1ses!2sar!4v1576128146831!5m2!1ses!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</li>
+<li>
+        <div class="item-content">
+          <div class="item-media"><i class="fas fa-hourglass-start ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto">Happy Hour</div>
+            <div class="item-after"> <span class="badge">19 hs a 21 hs</span></div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="fas fa-mobile-alt ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto">011 15-6529-1766</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="fab fa-instagram ycon"></i></div>
+          <div class="item-inner">
+            <div class="item-title interior-texto"><a href="https://www.instagram.com/cervezapatagonia/">/cervezapatagonia
+            </a></div>
+          </div>
+        </div>
+      </li>
+</ul>
+</div>
+
+
+
+</div>  
+
+<button class="button col button-fill color-yellow text-color boton_barrio" onclick="show_hide_belgrano()">BELGRANO</button>
+<div class="ocultar_recoleta" id="belgrano">
+
+  <!-- <p>ON TAP</p> -->
+  <button class="button col boton_bar" onclick="show_hide_ontap()">On Tap</button>
+  <div class="ocultar" id="ontap">
+  
+  <ul>
+  <li>
+      <div class="item-content"></div>
+      <div class="item-media"><i class="fas fa-map-marker-alt ycon"></i>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6202.583178677269!2d-58.461152281811636!3d-34.56105417619698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb42b7949c619%3A0x25dc98ce3a5727c!2sOn%20Tap!5e0!3m2!1ses!2sar!4v1576128734023!5m2!1ses!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </li>
+  <li>
+          <div class="item-content">
+            <div class="item-media"><i class="fas fa-hourglass-start ycon"></i></div>
+            <div class="item-inner">
+              <div class="item-title interior-texto">Happy Hour</div>
+              <div class="item-after"> <span class="badge">18 hs a 20 hs</span></div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-media"><i class="fas fa-mobile-alt ycon"></i></div>
+            <div class="item-inner">
+              <div class="item-title interior-texto">011 5353-9838</div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-media"><i class="fab fa-instagram ycon"></i></div>
+            <div class="item-inner">
+              <div class="item-title interior-texto"><a href="https://www.instagram.com/ontapbsas/">/ontapbsas
+              </a></div>
+            </div>
+          </div>
+        </li>
+  </ul>
+  </div>
+  
+  <!-- <p>Cervelar</p> -->
+  <button class="button col boton_bar" onclick="show_hide_Cervelar()">Cervelar</button>
+  <div class="ocultar" id="Cervelar">
+  
+  <ul>
+  <li>
+      <div class="item-content"></div>
+      <div class="item-media"><i class="fas fa-map-marker-alt ycon"></i>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26281.403718935057!2d-58.44439547702662!3d-34.574426506426526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb42b44b234f9%3A0x883b265ae7d1a2d!2sCervelar!5e0!3m2!1ses!2sar!4v1576129283206!5m2!1ses!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe> 
+      </li>
+  <li>
+          <div class="item-content">
+            <div class="item-media"><i class="fas fa-hourglass-start ycon"></i></div>
+            <div class="item-inner">
+              <div class="item-title interior-texto">Happy Hour</div>
+              <div class="item-after"> <span class="badge">18 hs a 20 hs</span></div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-media"><i class="fas fa-mobile-alt ycon"></i></div>
+            <div class="item-inner">
+              <div class="item-title interior-texto">011 15-7366-6280</div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-media"><i class="fab fa-instagram ycon"></i></div>
+            <div class="item-inner">
+              <div class="item-title interior-texto"><a href="https://www.instagram.com/cervelar/">/cervelar
+              </a></div>
+            </div>
+          </div>
+        </li>
+  </ul>
+  </div>
+  
+  <!-- <p>Maldita Birra</p> -->
+  <button class="button col boton_bar" onclick="show_hide_MalditaBirra()">Maldita Birra</button>
+  <div class="ocultar" id="MalditaBirra">
+  
+  <ul>
+  <li>
+      <div class="item-content"></div>
+      <div class="item-media"><i class="fas fa-map-marker-alt ycon"></i>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26281.40450934292!2d-58.44439548469458!3d-34.57442400617863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb42eff4c741b%3A0x1d3ab02342ad7282!2sMaldita%20Birra!5e0!3m2!1ses!2sar!4v1576130154445!5m2!1ses!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </li>
+  <li>
+          <div class="item-content">
+            <div class="item-media"><i class="fas fa-hourglass-start ycon"></i></div>
+            <div class="item-inner">
+              <div class="item-title interior-texto">Happy Hour</div>
+              <div class="item-after"> <span class="badge">19 hs a 20 hs</span></div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-media"><i class="fas fa-mobile-alt ycon"></i></div>
+            <div class="item-inner">
+              <div class="item-title interior-texto">011 15-6529-1766</div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-media"><i class="fab fa-instagram ycon"></i></div>
+            <div class="item-inner">
+              <div class="item-title interior-texto"><a href="https://www.instagram.com/malditabirra/">/malditabirra</a></div>
+            </div>
+          </div>
+        </li>
+  </ul>
+  </div>
+  
+  
+  <!-- <p>Skål</p> -->
+  <button class="button col boton_bar" onclick="show_hide_Skal()">Skål</button>
+  <div class="ocultar" id="Skal">
+  
+  <ul>
+  <li>
+      <div class="item-content"></div>
+      <div class="item-media"><i class="fas fa-map-marker-alt ycon"></i>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10659.771353335753!2d-58.45870231413196!3d-34.561893547214446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7a56f574b71805a5!2zU2vDpWwgQ2VydmVjZXLDrWE!5e0!3m2!1ses!2sar!4v1576130450755!5m2!1ses!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </li>
+  <li>
+          <div class="item-content">
+            <div class="item-media"><i class="fas fa-hourglass-start ycon"></i></div>
+            <div class="item-inner">
+              <div class="item-title interior-texto">Happy Hour</div>
+              <div class="item-after"> <span class="badge">19 hs a 21 hs</span></div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-media"><i class="fas fa-mobile-alt ycon"></i></div>
+            <div class="item-inner">
+              <div class="item-title interior-texto">011 15-6529-1766</div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-media"><i class="fab fa-instagram ycon"></i></div>
+            <div class="item-inner">
+              <div class="item-title interior-texto"><a href="https://www.instagram.com/skalcerveceria/">/skalcerveceria
+              </a></div>
+            </div>
+          </div>
+        </li>
+  </ul>
+  </div>
+  
+  
+  
+  </div>
+
+
+
+
+
+
+
+
+<button class="button col button-fill color-yellow text-color boton_barrio" onclick="show_hide_microcentro()">MICROCENTRO</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- Link to another page -->
+                        <!-- <a href="about.html">About app</a> -->
+
+
+
+
+
+
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Toolbar-->
+        <div class="toolbar">
+            <div class="toolbar-inner">
+                <!-- Toolbar links -->
+
+
+
+                <!-- <a href="#" class="link"><a href="pagina3.html"><i class="f7-icons size-22">app</i></a>
+                    
+                <a href="#" class="link"><i class="f7-icons size-22">person_alt</i></a>
+                <a href="#" class="link"><i class="f7-icons size-22">square_favorites</i></a>
+                <a href="#" class="link"><i class="f7-icons size-22">square_grid_2x2_fill</i></a> -->
+
+
+
+
+<!-- ICONOS DE ABAJO -->
+                <a href="index.html" class="link"><i class="fas fa-beer icon"></i></i></a>
+                <a href="Usuario.html" class="link"><i class="fas fa-user icon"></i></a>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
